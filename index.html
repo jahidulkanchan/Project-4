@@ -13,7 +13,9 @@
 
     <!-- Additional Css-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/style.css">
@@ -24,19 +26,19 @@
         <div class="container">
             <div class="logo"><img src="images/Web UiExpert.png" alt=""></div>
             <nav id="main-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="menu">
+                    <li class="scroll-to-section active"><a href="#home">Home</a></li>
+                    <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
+                    <li class="scroll-to-section"><a href="#about">About</a></li>
+                    <li class="scroll-to-section"><a href="#blog">Blog</a></li>
+                    <li class="scroll-to-section"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div><a href="#" class="btn">Log in</a></div>
+            <div><a href="#" class="link-btn">Log in</a></div>
             <div id="nav-toggle"><span></span></div>
         </div>
     </header>
-    <section class="banner-section pt-lg-3">
+    <section class="banner-section pt-lg-3" id="home">
         <div class="container py-5">
             <div class="row">
                 <div class="col-md-6 mt-lg-5 pt-lg-5">
@@ -52,10 +54,10 @@
             </div>
         </div>
     </section>
-    <section class="services-section mt-5">
+    <section class="services-section pt-5"  id="portfolio">
         <div class="container">
-            <div class="top-text col-md-6 offset-md-3">
-                <h6>OUR SERVICES</h6>
+            <div class="top-text pt-5 col-md-6 offset-md-3 mt-5">
+                <h6 class="pt-5 pt-sm-0">OUR SERVICES</h6>
                 <h2>We Provide Best Quality Service </h2>
                 <p>Our commitment to quality ensures that your applications get the best UI design possible. UI/UX design is more than just pixels and animations, but the entire application experience.</p>
             </div><br>
@@ -111,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section mt-5 pt-5" id="about" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -141,7 +143,7 @@
                 <div class="col-sm-6  col-md-4">
                     <div class="card mb-5 mx-lg-2">
                         <div class="counter-number counter-number-1">
-                            <h2 class="counter-up">145</h2>
+                            <h2 class="counter">145</h2>
                         </div>
                         <h6 class="pt-5">Project Done</h6>
                     </div>
@@ -149,7 +151,7 @@
                 <div class="col-sm-6  col-md-4">
                     <div class="card mb-5 mx-lg-2">
                         <div class="counter-number counter-number-2">
-                            <h2 class="counter-up">54</h2>
+                            <h2 class="counter">54</h2>
                         </div>
                         <h6 class="pt-5">Happy Clients</h6>
                     </div>
@@ -157,7 +159,7 @@
                 <div class="col-sm-6  col-md-4">
                     <div class="card mb-5 mx-lg-2">
                         <div class="counter-number counter-number-3">
-                            <h2 class="counter-up">13</h2>
+                            <h2 class="counter">13</h2>
                         </div>
                         <h6 class="pt-5">Awards Earn</h6>
                     </div>
@@ -322,9 +324,9 @@
             </div>
         </div>
     </section>
-    <section class="blog-section">
+    <section class="blog-section" id="blog">
         <div class="container">
-            <div class="top-text col-lg-6 offset-lg-3 px-lg-4">
+            <div class="top-text mt-5 col-lg-6 offset-lg-3 px-lg-4">
                 <h1>Our Blog</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus vehicula elit vel egestas.</p>
             </div><br><br><br>
@@ -360,7 +362,7 @@
                     </div>
                 </div>
             </div>
-            <div class="brands-list">
+            <div class="brands-list" id="contact">
                 <div class="brand-logo">
                     <a href="#">
                         <img src="images/tp-link.png" alt="">
@@ -381,9 +383,9 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer >
         <div class="container">
-            <div class="footer-links">
+            <div class="footer-links pt-5">
                 <div class="social-link">
                     <div class="logo"><img src="images/Web UiExpert.png" alt=""></div>
                     <p class="col-8">The full-stack design team who focuses on digital products whatever they are.</p>
@@ -433,12 +435,10 @@
     
     <!-- Additional Js-->
      <script src="js/jquery-2.1.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/counterup.min.js"></script>
-
     <!-- Custom Css -->
     <script src="js/custom.js"></script>
-
 </body>
 </html>

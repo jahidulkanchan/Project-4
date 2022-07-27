@@ -61,6 +61,8 @@ img{
     }
 
     body #main-menu ul li{
+        margin: 0 auto;
+        width: 150px;
         line-height: 40px;
     }
     body header #nav-toggle {
@@ -152,13 +154,18 @@ align-items: center;
 margin: 0px 20px;
 }
 #main-menu ul li a{
-padding: 5px 10px;
+padding: 5px 0px;
 color: #ffffff;
 font-weight: 500;
 text-transform: uppercase;
+border-bottom: 2px solid transparent;
+transition: all .3s ease;
 }
-header .btn{
-padding: 8px 30px;
+#main-menu ul li a.active{
+border-bottom: 2px solid #ffffff;
+}
+header .link-btn{
+padding: 10px 30px;
 font-weight: bold;
 text-transform: uppercase;
 border-radius: 50px;
@@ -167,10 +174,8 @@ border: 1px solid coral;
 background-color: #ff7f50;
 transition: all .3s ease;
 }
-header .btn:focus{
-box-shadow: none;
-}
-header .btn:hover{
+
+header .link-btn:hover{
 background-color: #ffffff;
 color: #f86a37;
 }
