@@ -1,10 +1,24 @@
 
+//preloader
 
+window.addEventListener('load', function(){
+    var loader = document.getElementById('preloader');
+    loader.style.display = 'none';
+})
 // Sticky Menu
 window.addEventListener('scroll', function(){
     var header = document.getElementById('header');
-    header.classList.toggle('sticky', window.scrollY > 300)
+    header.classList.toggle('sticky', window.scrollY > 300);
+    
+    // scroll-top
+    var scrollTop = document.getElementById('scroll-top');
+    scrollTop.classList.toggle('show', window.scrollY > 500);
+    scrollTop.addEventListener('click', function(){
+        $(window).scrollTop(0);
+    })
+
 });
+
 //Smooth-scroll js
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
@@ -78,19 +92,6 @@ window.addEventListener("load", function(){
 //wow js
 new WOW().init();
 
-//Sticky Nav  & TopScroll
-window.addEventListener("scroll" , function(){
-//Sticky Nav
-  var navSlide = document.getElementById("header");
-  navSlide.classList.toggle("sticky" , window.scrollY > 200 );
-
-//TopScroll
-  var topScroll = document.getElementById("top-scroll");
-  topScroll.addEventListener('click', function(){
-      $(window).scrollTop(0);
-  });
-  topScroll.classList.toggle("visible", window.scrollY > 400 );
-})
 
 
 
